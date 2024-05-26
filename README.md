@@ -11,7 +11,7 @@ Welcome to the Shell Command Repository! This repository contains a collection o
 
 ## System Administration
 
-### Command 1: Description
+### ssh
 
 ```bash
-# Copy and paste your command here
+ssh -t demo_user@example.com -p 22 -i ~/.ssh/demo_private_key.pem -o StrictHostKeyChecking=no
