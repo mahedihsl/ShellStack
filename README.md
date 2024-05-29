@@ -25,3 +25,10 @@ ssh -t demo_user@example.com -p 22 -i ~/.ssh/demo_private_key.pem -o StrictHostK
 ```bash
 scp -i ~/.ssh/demo_private_key.pem -P 22 demo_user@example.com:/home/demo_user/source_file.tar.gz /home/local_user/destination_directory
 ```
+
+### ppk to pem file by puttygen
+
+```bash
+puttygen /path/of/ppk -O private-openssh -o /path/of/.pem
+```
+
